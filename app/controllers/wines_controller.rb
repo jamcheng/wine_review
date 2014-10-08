@@ -4,6 +4,6 @@ class WinesController < ApplicationController
 		@wines = Wine.all
 	end
 	def show
-		@wine = Wine.find(params[:name])
+		@wine = Wine.find(params[:id])
 	end
 end
