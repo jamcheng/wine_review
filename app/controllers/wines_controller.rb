@@ -14,6 +14,15 @@ class WinesController < ApplicationController
 		@wine.save
 		redirect_to @wine
 	end
+	def edit
+		@wine = Wine.find(params[:id])
+	end
+	def update
+		@wine = Wine.find(params[:id])
+		@wine.update(wine_params)
+		redirect_to @wine
+	end
+
 
 	private
 
