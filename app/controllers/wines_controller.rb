@@ -1,4 +1,5 @@
 class WinesController < ApplicationController
+	before_action :set_wine, only: [:show, :edit, :update, :destroy]
 	def index
 		@available_at = Time.now
 		@wines = Wine.all
@@ -33,5 +34,7 @@ class WinesController < ApplicationController
 	def wine_params
 		params.require(:wine).permit(:name, :year, :country, :winery, :varietal)
 	end
-
+	def set_wine
+		@wine=Wine.find(params[:id])
+	end
 end
