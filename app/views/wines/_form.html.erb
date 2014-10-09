@@ -5,7 +5,8 @@
 		<%= f.label :winery%> <%= f.text_field :winery %><br />
 		<%= f.label :country%> <%= f.text_field :country %><br />
 		<%= f.label :varietal%> <%= f.text_field :varietal %><br />
-		<p><%= f.submit %></p>
-		<%= link_to 'Cancel', wines_path %>
-		
+		<p>
+			<%= f.submit %>
+			<%= link_to 'Cancel', wines_path %>
+		</p>
 	<% end %>
