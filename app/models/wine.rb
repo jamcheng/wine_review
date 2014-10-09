@@ -3,5 +3,5 @@ class Wine < ActiveRecord::Base
 	validates :year, 
 		numericality: { only_integer: true }, 
 		unless: "year.blank?"
-	validates :varietal, inclusion: {in: %w(red white), message: "%{value} is not a valid varietal"}
+	validates :varietal, inclusion: {in: %w(Red White), message: "%{value} is not a valid varietal"}
 end
