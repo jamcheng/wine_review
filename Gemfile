@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+# class 3 lab 6 hw
+gem 'bootstrap-sass', '~> 3.1.1'
+
+# class 3 lab 7 hw
+gem 'kaminari'
+gem 'kaminari-bootstrap', '~> 3.0.1'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
