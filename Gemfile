@@ -7,6 +7,11 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'kaminari'
 gem 'kaminari-bootstrap', '~> 3.0.1'
 
+# class 3 hw twitter bootstrap
+gem 'therubyracer'
+gem 'less-rails-bootstrap'
+gem 'twitter-bootstrap-rails'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
