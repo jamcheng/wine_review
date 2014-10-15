@@ -1,4 +1,5 @@
 class LogEntry < ActiveRecord::Base
+	belongs_to :wine
 	RATINGS = 1..5
 	validates :name, :rating, :location, :comments, :tasted_on, presence: true
 	validates :comments, length: { minimum: 10}, unless: 'comments.blank?'

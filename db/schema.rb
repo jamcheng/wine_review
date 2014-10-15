@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141015014204) do
+ActiveRecord::Schema.define(version: 20141015194756) do
 
   create_table "log_entries", force: true do |t|
     t.string   "name"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20141015014204) do
     t.string   "varietal"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "wine_id"
   end
 
 end
