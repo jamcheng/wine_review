@@ -19,7 +19,7 @@ Class LogEntriesController < ApplicationController
 	private
 
 	def set_wine
-		@wine = Wine.fine(params[:wine_id])
+		@wine = Wine.find(params[:wine_id])
 	end
 	def log_entry_params
 		params.require(:log_entry).permit(:rating, :name, :comments, :location, :tasted_on)
