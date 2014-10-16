@@ -6,7 +6,7 @@ class Wine < ActiveRecord::Base
 		unless: "year.blank?"
 	validates :varietal, inclusion: 
 		{ in: VARIETALS, message: "%{value} is not a valid varietal"}
-	has_many :log_entries, dependent: :destroy
+	has_many :log_entry, dependent: :destroy
 
 
 	def average_rating
