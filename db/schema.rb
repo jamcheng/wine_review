@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141015194756) do
+ActiveRecord::Schema.define(version: 20141016022505) do
 
   create_table "log_entries", force: true do |t|
     t.string   "name"
@@ -21,7 +21,10 @@ ActiveRecord::Schema.define(version: 20141015194756) do
     t.datetime "tasted_on"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "wine_id"
   end
+
+  add_index "log_entries", ["wine_id"], name: "index_log_entries_on_wine_id"
 
   create_table "wines", force: true do |t|
     t.string   "name"
@@ -31,7 +34,6 @@ ActiveRecord::Schema.define(version: 20141015194756) do
     t.string   "varietal"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "wine_id"
   end
 
 end
